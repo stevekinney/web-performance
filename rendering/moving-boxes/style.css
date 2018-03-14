@@ -1,0 +1,11 @@
+.application {
+  position: relative;
+  /* display: none; */
+}
+
+.element {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+}

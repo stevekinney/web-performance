@@ -1,0 +1,19 @@
+{
+  "name": "web-performance",
+  "version": "1.0.0",
+  "description": "Exercises for Steve's Frontend Masters course on web performance.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.2",
+    "serve-static": "^1.13.2"
+  },
+  "dependencies": {
+    "serve": "^6.5.3"
+  }
+}
