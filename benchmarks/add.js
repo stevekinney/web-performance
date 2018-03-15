@@ -4,4 +4,4 @@ function add(x, y) {
 
 add(1, 2);
 %OptimizeFunctionOnNextCall(add);
-add(3, 4);
+add(3, '4');

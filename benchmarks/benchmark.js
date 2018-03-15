@@ -2,12 +2,10 @@ const { performance } = require('perf_hooks');
 
 // SETUP 🏁
 
-let iterations = 1e7;
+let iterations = 100000;
 
-const a = 1;
-const b = 2;
-
-const add = (x, y) => x + y;
+const square = (x) => x * x;
+const sumOfSquares = (a, b) => square(a) + square(b);
 
 // 🔚 SETUP
 
@@ -16,7 +14,7 @@ performance.mark('start');
 // EXERCISE 💪
 
 while (iterations--) {
-  add(a, b);
+  sumOfSquares(iterations, iterations + 1);
 }
 
 // 🔚 EXERCISE
