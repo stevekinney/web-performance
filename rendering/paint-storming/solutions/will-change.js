@@ -11,3 +11,7 @@ box.addEventListener('transitionend', () => {
 box.addEventListener('click', () => {
   box.classList.toggle('move');
 });
+
+box.addEventListener('mouseleave', () => {
+  box.style.willChange = 'auto';
+});
