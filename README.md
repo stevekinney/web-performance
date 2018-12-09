@@ -2,7 +2,9 @@
 
 ## Course
 
-[JavaScript Performance](https://frontendmasters.com/courses/web-performance/) – This course was formerly titled "Website Performance", but the course ended up being more tightly focused on making your JavaScript faster.
+Thanks for taking the [JavaScript Performance](https://frontendmasters.com/courses/web-performance/) course! 
+
+Note: This course was formerly titled "Website Performance", but the course ended up being more tightly focused on making your JavaScript faster.
 
 ## Installation
 
