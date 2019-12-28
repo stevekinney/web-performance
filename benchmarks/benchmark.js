@@ -1,6 +1,15 @@
-const { performance } = require('perf_hooks');
+const { performance, PerformanceObserver } = require("perf_hooks");
 
 // SETUP 🏁
+
+// Since Node-v10.0.0 performance.getEntriesByName is deprecated
+
+const obs = new PerformanceObserver((list, observer) => {
+  console.log(list.getEntries()[0]);
+  performance.clearMarks();
+  observer.disconnect();
+});
+obs.observe({ entryTypes: ["measure"] });
 
 let iterations = 1e7;
 
@@ -11,7 +20,7 @@ const add = (x, y) => x + y;
 
 // 🔚 SETUP
 
-performance.mark('start');
+performance.mark("start");
 
 // EXERCISE 💪
 
@@ -21,9 +30,6 @@ while (iterations--) {
 
 // 🔚 EXERCISE
 
-performance.mark('end');
+performance.mark("end");
 
-performance.measure('My Special Benchmark', 'start', 'end');
-
-const [ measure ] = performance.getEntriesByName('My Special Benchmark');
-console.log(measure);
+performance.measure("My Special Benchmark", "start", "end");
